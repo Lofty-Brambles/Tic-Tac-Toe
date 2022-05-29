@@ -1,0 +1,7 @@
+@use "add";
+@use "normalize";
+
+body {
+	background-image: url(./../assets/background.jpg);
+	background-size: cover;
+}
