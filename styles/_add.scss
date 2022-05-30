@@ -1,7 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&family=Titan+One&display=swap');
 
-$repel-light: #f1f5f9;
-$repel-dark: #111;
+$light: #F8F8F8;
+$dark: #111111;
+$grad: #C39EA0;
+$past: #FFB7C2;
+$cont: #FA255E;
 
 $fira: "Fira Sans", Helvetica, Arial, sans-serif;
 $titan: "Titan One", cursive;
@@ -20,11 +23,6 @@ $titan: "Titan One", cursive;
 
 @mixin circle {
 	border-radius: 100%;
-}
-
-@mixin font-size($size) {
-	font-size: $size;
-	font-size: calc($size / 16px) * 1rem;
 }
 
 @mixin opacity($opacity) {

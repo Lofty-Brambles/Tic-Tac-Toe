@@ -339,8 +339,153 @@ template {
 }
 
 body {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
   background-image: url(./../assets/background.jpg);
   background-size: cover;
+}
+
+header {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  height: 10vh;
+  background: #111111;
+  background: -webkit-linear-gradient(left, #111111, #777777);
+  background: linear-gradient(to right, #111111, #777777);
+  text-shadow: 1px 1px 0px #FFB7C2, -1px 1px 0px #FFB7C2, 1px -1px 0px #FFB7C2, -1px -1px 0px #FFB7C2;
+  font-family: "Titan One", cursive;
+  font-size: 2rem;
+  color: #F8F8F8;
+}
+header img {
+  width: 2rem;
+  height: 2rem;
+}
+
+footer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 10vh;
+  background: #111111;
+  background: -webkit-linear-gradient(left, #111111, #777777);
+  background: linear-gradient(to right, #111111, #777777);
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  color: #F8F8F8;
+}
+footer img {
+  width: 1.5rem;
+  height: 1.5rem;
+  transition: transform ease-in-out 0.7s;
+}
+footer img:hover {
+  transform: scale(1.2) rotateX(360deg);
+}
+footer .rotate {
+  transform: rotate(180deg);
+}
+
+main {
+  box-sizing: border-box;
+  width: 100%;
+  height: 80vh;
+  overflow-y: scroll;
+  padding: 2rem;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.sidebar {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  gap: 2rem;
+}
+
+.bttom-panel, .top-panel {
+  padding: 2rem;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: center;
+  border: #111111 solid 0.5rem;
+  border-radius: 2rem;
+  background-color: #F8F8F8;
+}
+
+.bttom-panel {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  font-family: "Titan One", cursive;
+  font-size: 1rem;
+}
+.bttom-panel .button-menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.bttom-panel .button-menu .btn {
+  align-self: center;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0.25rem;
+  background-color: #FA255E;
+  background-size: 4px 3px;
+  border: 0.125rem solid #111111;
+  border-radius: 1rem;
+  box-shadow: #111111 1rem 2rem 1.5rem -1rem;
+  color: #111111;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  user-select: none;
+  touch-action: manipulation;
+}
+.bttom-panel .button-menu .btn:hover {
+  box-shadow: #919191 0.125rem 0.5rem 0.5rem -0.4rem;
+  transform: translate3d(0, 2px, 0);
+}
+.bttom-panel .reset-bar {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.bttom-panel .reset-bar div .block {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+.bttom-panel .reset-bar .player {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  text-align: center;
+}
+.bttom-panel .reset-bar .player .score {
+  font-size: 1.5rem;
+}
+.bttom-panel .win-message {
+  text-align: center;
 }
 
 /*# sourceMappingURL=styles.css.map */

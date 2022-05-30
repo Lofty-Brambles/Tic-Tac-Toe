@@ -9,7 +9,7 @@
 	<script src="./script.js" defer></script>
 </head>
 <body>
-	<header><img src="" alt=""><span>Tic-Tac-Toe!</span></header>
+	<header><img src="./assets/logo.webp" alt="logo"><span>Tic-Tac-Toe!</span></header>
 	<main>
 		<div class="sidebar">
 			<div class="top-panel">
@@ -49,9 +49,22 @@
 				</div>
 			</div>
 			<div class="bttom-panel">
-				<div class="win-message"></div>
-				<div class="warn-message"></div>
-				<div class="restart-btn">🔄 Play Again?</div>
+				<div class="win-message">No one has won a match yet.<br>Can you be the first?</div>
+				<div class="reset-bar">
+					<div class="player">
+						<div class="first-name">Player ❌</div>
+						<div class="score first-score">0</div>
+					</div>
+					<div><img src="./assets/vs.png" alt="" class="block"></div>
+					<div class="player">
+						<div class="second-name">Player ⭕</div>
+						<div class="score second-score">0</div>
+					</div>
+				</div>
+				<div class="button-menu">
+					<button class="btn reset-btn">🔃 Reset Scores?</button>
+					<button class="btn restart-btn">🔄 Play Again?</button>
+				</div>
 			</div>
 		</div>
 		<div class="mainbar">
@@ -67,26 +80,14 @@
 				<div class="move-box" id="9"></div>
 			</div>
 		</div>
-		<div class="resetbar">
-			<ul class="scores">
-				<li class="first-player">
-					<div class="first-name">Player ❌</div>
-					<div class="first-score">0</div>
-				</li>
-				<li><img src="" alt="" class="block"></li>
-				<li class="second-player">
-					<div class="second-name">Player ⭕</div>
-					<div class="second-score">0</div>
-				</li>
-			</ul>
-			<div class="reset-btn"></div>
-		</div>
 	</main>
 	<footer>
 		Lofty Brambles | Copyright&nbsp;
 		<span class="rotate">©</span>&nbsp;
-		<span class="year"></span>&nbsp;|&nbsp;
-		<a href=""><img src="" alt="" class="block"></a>
+		<span class="year"></span>&nbsp;|&nbsp;&nbsp;
+		<a href="https://github.com/Lofty-Brambles/Tic-Tac-Toe">
+			<img src="./assets/github.png" alt="github" class="block">
+		</a>
 	</footer>
 </body>
 </html>
