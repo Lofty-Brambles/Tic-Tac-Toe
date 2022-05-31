@@ -423,6 +423,44 @@ main {
   background-color: #F8F8F8;
 }
 
+.top-panel {
+  padding: 0;
+  border-radius: 0rem 2rem 2rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+}
+.top-panel .tab-bar {
+  background-color: #C39EA0;
+  height: 100%;
+}
+.top-panel .tab-bar .tab-links {
+  height: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.top-panel .tab-bar .tab-links:hover {
+  background-color: #FFB7C2;
+}
+.top-panel .tab-bar .tab-links.active {
+  background-color: #FA255E;
+}
+.top-panel .tab-content {
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+.top-panel .tab-content .center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
 .bttom-panel {
   display: flex;
   flex-flow: column nowrap;
@@ -438,29 +476,6 @@ main {
   justify-content: center;
   align-items: center;
   gap: 1rem;
-}
-.bttom-panel .button-menu .btn {
-  align-self: center;
-  box-sizing: border-box;
-  outline: none;
-  padding: 0.25rem;
-  background-color: #FA255E;
-  background-size: 4px 3px;
-  border: 0.125rem solid #111111;
-  border-radius: 1rem;
-  box-shadow: #111111 1rem 2rem 1.5rem -1rem;
-  color: #111111;
-  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
-  font-size: 1rem;
-  line-height: 1.5rem;
-  text-decoration: none;
-  transition: all 235ms ease-in-out;
-  user-select: none;
-  touch-action: manipulation;
-}
-.bttom-panel .button-menu .btn:hover {
-  box-shadow: #919191 0.125rem 0.5rem 0.5rem -0.4rem;
-  transform: translate3d(0, 2px, 0);
 }
 .bttom-panel .reset-bar {
   display: flex;
@@ -486,6 +501,62 @@ main {
 }
 .bttom-panel .win-message {
   text-align: center;
+}
+
+.wrap {
+  position: relative;
+  margin: 0.45rem 0rem;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+}
+.wrap label {
+  position: absolute;
+  top: 0.25rem;
+  margin: 0.25rem;
+  padding: 0.25rem;
+  font-size: 1rem;
+  transition: top 0.2s ease-in-out, font-size 0.2s ease-in-out;
+}
+.wrap label.active {
+  top: -1.5rem;
+  font-size: 0.8rem;
+}
+.wrap input {
+  padding: 0.5rem;
+  border: 2px solid #FA255E;
+  border-radius: 0.5rem;
+  background-color: #F8F8F8;
+  font-size: 1rem;
+  color: #FA255E;
+}
+.wrap input:focus {
+  outline: none;
+}
+.wrap .updt {
+  margin-left: 1rem;
+}
+
+.btn {
+  align-self: center;
+  box-sizing: border-box;
+  outline: none;
+  padding: 0.25rem;
+  background-color: #FA255E;
+  background-size: 4px 3px;
+  border: 0.125rem solid #111111;
+  border-radius: 1rem;
+  box-shadow: #111111 1rem 2rem 1.5rem -1rem;
+  color: #111111;
+  font-family: "Fira Sans", Helvetica, Arial, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  user-select: none;
+  touch-action: manipulation;
+}
+.btn:hover {
+  box-shadow: #919191 0.125rem 0.5rem 0.5rem -0.4rem;
+  transform: translate3d(0, 2px, 0);
 }
 
 /*# sourceMappingURL=styles.css.map */
