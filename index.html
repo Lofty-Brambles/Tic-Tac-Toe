@@ -36,11 +36,11 @@
 						<div class="wrap">
 							<label>Player: Name</label>
 							<input type="text" id="plr-name">
-							<button class="first-name-crtl btn updt">📤</button>
+							<button class="first-name-crtl-2 btn updt">📤</button>
 						</div>
 						<div class="wrap">
-							<label>Difficulty Levels</label>
-							<select id="diff-level">
+							<label id="menu-label">Difficulty Levels</label>
+							<select>
 								<option value="blind">Blind</option>
 								<option value="easy">Easy</option>
 								<option value="medium" selected>Medium</option>
@@ -71,17 +71,40 @@
 			</div>
 		</div>
 		<div class="mainbar">
-			<div class="board">
-				<div class="move-box" id="1"></div>
-				<div class="move-box" id="2"></div>
-				<div class="move-box" id="3"></div>
-				<div class="move-box" id="4"></div>
-				<div class="move-box" id="5"></div>
-				<div class="move-box" id="6"></div>
-				<div class="move-box" id="7"></div>
-				<div class="move-box" id="8"></div>
-				<div class="move-box" id="9"></div>
-			</div>
+			<table class="board-pvp">
+				<tr>
+					<td class="cell"></td>
+					<td class="cell"></td>
+					<td class="cell"></td>
+				</tr>
+				<tr>
+					<td class="cell"></td>
+					<td class="cell"></td>
+					<td class="cell"></td>
+				</tr>
+				<tr>
+					<td class="cell"></td>
+					<td class="cell"></td>
+					<td class="cell"></td>
+				</tr>
+			</table>
+			<table class="board-pvc">
+				<tr>
+					<td class="square"></td>
+					<td class="square"></td>
+					<td class="square"></td>
+				</tr>
+				<tr>
+					<td class="square"></td>
+					<td class="square"></td>
+					<td class="square"></td>
+				</tr>
+				<tr>
+					<td class="square"></td>
+					<td class="square"></td>
+					<td class="square"></td>
+				</tr>
+			</table>
 		</div>
 	</main>
 	<footer>

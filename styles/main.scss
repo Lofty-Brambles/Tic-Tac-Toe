@@ -185,6 +185,22 @@ main {
 	& .updt {
 		margin-left: 1rem;
 	}
+
+	& select {
+		padding: 0.5rem;
+		border: 2px solid add.$cont;
+		border-radius: 0.5rem;
+
+		box-shadow: 4px 4px lighten( add.$dark, 20% );
+		background-color: add.$light;
+		font-size: 1rem;
+		color: add.$cont;
+	}
+
+	& #menu-label {
+		top: -1.5rem;
+		font-size: 0.8rem;
+	}
 }
 
 .btn {
@@ -208,9 +224,22 @@ main {
 	transition: all 235ms ease-in-out;
 	user-select: none;
 	touch-action: manipulation;
+	cursor: pointer;
 
 	&:hover {
 		box-shadow: lighten( add.$dark, 50% ) 0.125rem 0.5rem 0.5rem -0.4rem;
 		transform: translate3d(0, 2px, 0);
 	}
+}
+
+.board-pvp, .board-pvc {
+	display: none;
+}
+
+td > div {
+	width: 8rem;
+	height: 8rem;
+	background-color: add.$cont;
+	margin: 0.125rem;
+	cursor: pointer;
 }

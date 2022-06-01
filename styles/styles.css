@@ -534,6 +534,19 @@ main {
 .wrap .updt {
   margin-left: 1rem;
 }
+.wrap select {
+  padding: 0.5rem;
+  border: 2px solid #FA255E;
+  border-radius: 0.5rem;
+  box-shadow: 4px 4px #444444;
+  background-color: #F8F8F8;
+  font-size: 1rem;
+  color: #FA255E;
+}
+.wrap #menu-label {
+  top: -1.5rem;
+  font-size: 0.8rem;
+}
 
 .btn {
   align-self: center;
@@ -553,10 +566,23 @@ main {
   transition: all 235ms ease-in-out;
   user-select: none;
   touch-action: manipulation;
+  cursor: pointer;
 }
 .btn:hover {
   box-shadow: #919191 0.125rem 0.5rem 0.5rem -0.4rem;
   transform: translate3d(0, 2px, 0);
+}
+
+.board-pvp, .board-pvc {
+  display: none;
+}
+
+td > div {
+  width: 8rem;
+  height: 8rem;
+  background-color: #FA255E;
+  margin: 0.125rem;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=styles.css.map */
